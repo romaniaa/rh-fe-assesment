@@ -30,7 +30,7 @@
 
   .hidden-until-wide {
     @media screen and (max-width: 1023px), print {
-      display: none;
+      display: none!important;
     }
   }
 
@@ -48,7 +48,7 @@
 
   .hidden-at-wide {
     @media screen and (min-width: 1024px), print {
-      display: none;
+      display: none!important;
     }
   }
 
