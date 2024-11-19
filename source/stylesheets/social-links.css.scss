@@ -1,0 +1,22 @@
+@layer components {
+  .social-links {
+    display: flex;
+    gap: var(--spacing-unit-xxs);
+  }
+
+  .social-links__item {
+  }
+
+  .social-links__link {
+    display: block;
+    padding: var(--spacing-unit-xs);
+  }
+
+  .social-links__icon {
+    transition: fill 0.2s;
+
+    .social-links__link:hover & {
+      fill: var(--color-grays-02);
+    }
+  }
+}

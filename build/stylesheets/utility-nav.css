@@ -1,0 +1,19 @@
+@layer components {
+  .utility-nav__menu {
+    align-items: center;
+    gap: var(--spacing-unit-s); }
+  .utility-nav__action {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-unit-xxs);
+    -webkit-transition: color var(--transition-speed);
+    transition: color var(--transition-speed);
+    color: var(--color-text);
+    text-decoration: none; }
+    .utility-nav__action:hover {
+      color: var(--color-links); }
+  .utility-nav__icon {
+    -webkit-transition: fill var(--transition-speed);
+    transition: fill var(--transition-speed); }
+    .utility-nav__action:hover .utility-nav__icon {
+      fill: var(--color-links); } }

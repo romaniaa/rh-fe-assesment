@@ -1,0 +1,27 @@
+@layer components {
+  .utility-nav__menu {
+    align-items: center;
+    gap: var(--spacing-unit-s);
+  }
+
+  .utility-nav__action {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-unit-xxs);
+    transition: color var(--transition-speed);
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-links);
+    }
+  }
+
+  .utility-nav__icon {
+    transition: fill var(--transition-speed);
+
+    .utility-nav__action:hover & {
+      fill: var(--color-links);
+    }
+  }
+}
