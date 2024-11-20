@@ -13,7 +13,8 @@
       .media-with-text__grid {
         gap: var(--spacing-unit-s); } }
   .media-with-text__image-wrapper {
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    aspect-ratio: 1 / 1; }
     @media screen and (min-width: 768px), print {
       .media-with-text__image-wrapper {
         -ms-grid-column: 1;
@@ -28,7 +29,4 @@
       .media-with-text__text-wrapper {
         grid-column: 8 / -1; } }
   .media-with-text__block {
-    margin: 0; }
-  .hero__content {
-    padding: 0;
-    max-width: none; } }
+    margin: 0; } }
