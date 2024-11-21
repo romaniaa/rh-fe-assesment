@@ -78,6 +78,7 @@
     <div class="page-header__search">
       <div class="search-form">
 <!-- moved to main -->
+
   <search-form class="search-form__wrapper">
     <form class="search-form__form" action="/search" method="get" role="search">
       <div class="search-form__input-wrapper">
@@ -87,7 +88,7 @@
 
         <input id="input" class="search-form__input text-box-reset" data-search-form-input="" type="search" name="q" value="" placeholder="Search" />
 
-        <button type="submit" class="search-form__submit button-reset" aria-label="Search">
+        <button type="submit" class="search-form__submit button-reset" aria-label="Search Form">
           <span class="icon icon--search" aria-hidden="true" focusable="false" role="presentation">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -308,7 +309,7 @@
           </span>
         </button>
 
-        <div id="dropdown_e3Vr6B" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Top Selling">
+        <div id="dropdown_e3Vr6B" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Top Selling" aria-hidden="true">
           <style>
             @layer components {
               #dropdown_e3Vr6B .mega-menu__list--grid {
@@ -565,15 +566,17 @@
         </div>
       </nav-item>
     </li>
+
     <li class="nav-item">
       <nav-item class="nav-item__content">
         <span class="nav-item__wrapper">
           <a href="/collections/toys" class="nav-item__link">
             <span class="nav-item__text">Toys</span>
-          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Toys" aria-controls="dropdown_9A9Fa8" aria-expanded="false"></button>
+          </a>
+          <button type="button" class="button-reset nav-item__trigger" aria-label="Open menu for Toys" aria-controls="dropdown_9A9Fa8" aria-expanded="false"></button>
         </span>
 
-        <div id="dropdown_9A9Fa8" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Toys">
+        <div id="dropdown_9A9Fa8" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Toys" aria-hidden="true">
           <style>
             @layer components {
               #dropdown_9A9Fa8 .mega-menu__list--grid {
@@ -703,6 +706,7 @@
         </div>
       </nav-item>
     </li>
+
     <li class="nav-item">
       <nav-item class="nav-item__content">
         <button type="button" class="nav-item__link button-reset" aria-controls="dropdown_8PXbqa" aria-expanded="false" aria-label="Open menu for Apparel" data-trigger="">
@@ -712,7 +716,7 @@
           </span>
         </button>
 
-        <div id="dropdown_8PXbqa" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Apparel">
+        <div id="dropdown_8PXbqa" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Apparel" aria-hidden="true">
           <style>
             @layer components {
               #dropdown_8PXbqa .mega-menu__list--grid {
@@ -818,15 +822,17 @@
         </div>
       </nav-item>
     </li>
+
     <li class="nav-item">
       <nav-item class="nav-item__content">
         <span class="nav-item__wrapper">
           <a href="/collections/paintings" class="nav-item__link">
             <span class="nav-item__text">Paintings</span>
-          </a><button type="button" class="button-reset nav-item__trigger" aria-hidden="true" aria-label="Open menu for Paintings" aria-controls="dropdown_YbMRrU" aria-expanded="false"></button>
+          </a>
+          <button type="button" class="button-reset nav-item__trigger" aria-label="Open menu for Paintings" aria-controls="dropdown_YbMRrU" aria-expanded="false"></button>
         </span>
 
-        <div id="dropdown_YbMRrU" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Paintings">
+        <div id="dropdown_YbMRrU" class="nav-item__dropdown nav-item__dropdown--full-width" data-menu="" aria-label="Paintings" aria-hidden="true">
           <style>
             @layer components {
               #dropdown_YbMRrU .mega-menu__list--grid {
@@ -916,6 +922,7 @@
         </div>
       </nav-item>
     </li>
+
     <li class="nav-item">
       <nav-item class="nav-item__content">
         <span class="nav-item__wrapper">
@@ -927,6 +934,7 @@
     </li>
   </ul>
 </div>
+
       </hover-intent>
     </page-navigation>
 
@@ -2305,7 +2313,7 @@
   <div class="hero__content-wrapper hero__content-wrapper--middle-center">
     <div class="hero__content hero__content--middle-center vertical-flow">
       <div class="hero__block hero__block--heading">
-        <div class="section-heading heading-2 no-margin text-center" style="color: inherit">Lorem ipsum dolor sit amet</div>
+        <h1 class="section-heading heading-2 no-margin text-center" style="color: inherit">Lorem ipsum dolor sit amet</h1>
       </div>
 
       <div class="hero__block hero__block--text">
@@ -2398,7 +2406,7 @@
     <div class="media-with-text__text-wrapper">
       <div class="hero__content hero__content--middle-center vertical-flow">
         <div class="hero__block hero__block--heading">
-          <div class="section-heading heading-2 no-margin text-center" style="color: inherit">Heading</div>
+          <h2 class="section-heading heading-2 no-margin text-center" style="color: inherit">Heading</h2>
         </div>
 
         <div class="hero__block hero__block--text">
@@ -2492,7 +2500,7 @@
     <div class="media-with-text__text-wrapper">
       <div class="hero__content hero__content--middle-center vertical-flow">
         <div class="hero__block hero__block--heading">
-          <div class="section-heading heading-2 no-margin text-center" style="color: inherit">Heading</div>
+          <h2 class="section-heading heading-2 no-margin text-center" style="color: inherit">Heading</h2>
         </div>
 
         <div class="hero__block hero__block--text">
@@ -2528,7 +2536,7 @@
 
   <div class="footer-menus__content vertical-flow">
     <div class="footer-menus__nav" aria-labelledby="heading-658d14fc-885a-4c5c-90fc-3480b7e22969">
-      <h1 class="heading-2" id="heading-658d14fc-885a-4c5c-90fc-3480b7e22969">Menu 1</h1>
+      <h3 class="heading-2" id="heading-658d14fc-885a-4c5c-90fc-3480b7e22969">Menu 1</h3>
 
       <!-- There are no changes expected from this point down into the DOM -->
 <ul class="footer-menus__nav-items list-reset">
@@ -2553,7 +2561,7 @@
     </div>
 
     <div class="footer-menus__nav" aria-labelledby="heading-8904ed8d-b6c5-449c-900e-4e10b8e4767c">
-      <h1 class="heading-2" id="heading-8904ed8d-b6c5-449c-900e-4e10b8e4767c">Menu 2</h1>
+      <h3 class="heading-2" id="heading-8904ed8d-b6c5-449c-900e-4e10b8e4767c">Menu 2</h3>
 
       <!-- There are no changes expected from this point down into the DOM -->
 <ul class="footer-menus__nav-items list-reset">
@@ -2578,7 +2586,7 @@
     </div>
 
     <div class="footer-menus__nav" aria-labelledby="heading-b07774ca-b710-4fed-8249-d1961d2580c2">
-      <h1 class="heading-2" id="heading-b07774ca-b710-4fed-8249-d1961d2580c2">Menu 3</h1>
+      <h3 class="heading-2" id="heading-b07774ca-b710-4fed-8249-d1961d2580c2">Menu 3</h3>
 
       <!-- There are no changes expected from this point down into the DOM -->
 <ul class="footer-menus__nav-items list-reset">
@@ -2608,7 +2616,7 @@
  <!-- moved to main.css -->
 
   <div class="footer-email__content">
-    <h2 class="footer-email__heading heading-2 text-center">Email Signup</h2>
+    <h3 class="footer-email__heading heading-2 text-center">Email Signup</h3>
 
     <div class="footer-email__text text-center">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
