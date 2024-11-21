@@ -1,5 +1,1 @@
-@layer components {
-  .footer-social {
-    grid-area: social;
-    -ms-grid-column-align: center;
-        justify-self: center; } }
+@layer components{.footer-social{grid-area:social;-ms-grid-column-align:center;justify-self:center}}

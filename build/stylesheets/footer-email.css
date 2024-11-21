@@ -1,3 +1,1 @@
-@layer components {
-  .footer-email {
-    grid-area: email; } }
+@layer components{.footer-email{grid-area:email}}

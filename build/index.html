@@ -5,12 +5,57 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Syatt Front End Developer Assessment</title>
+    <!-- critical css -->
+    <style>
+      .content-wrapper {
+          margin: 0 5vw;
+      }
+      .hero {
+        display: grid;
+        position: relative;
+        grid-template-areas: "media";
+        width: 100%;
+      }
 
+      .hero__media-wrapper {
+        grid-area: media;
+      }
+
+      @media screen and (min-width: 768px), print {
+        .hero__media-wrapper--medium {
+          max-height: 360px;
+        }
+      }
+
+      .hero__media--placeholder {
+        display: block;
+        background: var(--color-grays-02);
+      }
+
+      .hero__content-wrapper {
+        display: flex;
+        grid-area: media;
+        flex-direction: column;
+        padding: var(--spacing-unit-xs);
+      }
+
+      .hero__content-wrapper--middle-center {
+        align-self: center;
+        justify-self: center;
+      }
+
+      .hero__content {
+        padding: var(--spacing-unit-m);
+        max-width: 700px;
+      }
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preload" href="/stylesheets/main.css" as="style" onload="this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/stylesheets/main.css"></noscript>
     
     <link rel="stylesheet" href="/stylesheets/non-critical.css" media="print" onload="this.media='all'">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+
 
     <script defer type="importmap">
       {
@@ -32,8 +77,7 @@
 
     <div class="page-header__search">
       <div class="search-form">
-  <!-- moved to main -->
-
+<!-- moved to main -->
   <search-form class="search-form__wrapper">
     <form class="search-form__form" action="/search" method="get" role="search">
       <div class="search-form__input-wrapper">
@@ -43,7 +87,7 @@
 
         <input id="input" class="search-form__input text-box-reset" data-search-form-input="" type="search" name="q" value="" placeholder="Search" />
 
-        <button type="submit" class="search-form__submit button-reset" aria-label="Search Form">
+        <button type="submit" class="search-form__submit button-reset" aria-label="Search">
           <span class="icon icon--search" aria-hidden="true" focusable="false" role="presentation">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24" fill="currentColor">
               <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
@@ -2598,7 +2642,7 @@
 <!-- moved to main -->
   <div class="footer-social__content">
     <ul class="social-links list-reset">
-  <!-- moved to main.css -->
+<!-- moved to non-critical -->
 
   <li class="social-links__item social-links__item--facebook">
     <a href="/" class="social-links__link" target="_blank" aria-label="facebook link">
